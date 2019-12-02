@@ -1,0 +1,217 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 50px;
+}
+
+.nav {
+    width: 300px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.div{ margin:0 auto; width:400px; height:100px;} 
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-title {
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+.post-like {
+    padding: 0px 0px 0px 10px;
+    width: 50px;
+    height: 50px;
+}
+.post-image {
+    width: 640px;
+    height: 640px;
+}
+
+
+.post-likes {
+    padding: 0px 10px 10px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-published {
+    padding: 0px 0px 10px 450px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-discription {
+    width: 640px;
+    padding: 5000px 10px 0px 10px;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975); 
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+/* Add your styles here */
+
+.input{
+  box-sizing: border-box;
+  text-align:center;
+  font-size:20px;
+  height:2.7em;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  display:block;
+  outline:0;
+  padding:0 1em;
+  text-decoration:none;
+  width:100%;
+}
+
+.postTextInput{
+    margin:0 auto;
+  box-sizing: border-box;
+  font-size:18px;
+  height:100px;
+  width: 640px;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  display:block;
+  outline:0;
+  padding:0 1em;
+  text-decoration:none;
+}
+
+.postFileInput{
+    margin-left: 400px; 
+    margin-right: 290px;
+}
+
+.followinput{
+    float: left;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size:18px;
+    height:30px;
+    width: 240px;
+    border-radius:4px;
+      border:1px solid #c8cccf;
+      color:#6a6f77;
+      -web-kit-appearance:none;
+      -moz-appearance: none;
+
+}
+
+.popBox-mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .6;
+    z-index: 999;
+    background-color: #000;
+}
+.popBox-content{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.popBox-content{
+    width: 600px;
+    height: 250px;
+    background-color: #fff;
+    text-align: center;
+}
+#popBox-demo p{
+    line-height: 400px;
+    margin: 0;
+}
+.btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

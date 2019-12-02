@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+    <style>
+    </style>
+</head>
+<body >
+    <!-- This is an example app structure --> 
+    <header class='banner'>
+        <h1>Instacram</h1>
+        <ul class='nav'>
+            <!-- <li class="nav-item"><input type="file"/></li> -->
+            <label id='greeting' ></label>&nbsp;&nbsp;&nbsp;
+            <button class='nav-item button' id='profileBtn' disabled="true">profile</button>
+            <button class='nav-item button' id='logoutBtn'disabled="true">logout</button>
+        </ul>
+    </header>
+    <main role='main'>
+
+        <div id='loginDiv' class='div'>
+            <br>
+        <label>username:</label> <input type="text" name="username" id="usernameLogin" value=""><br><br>
+        password: <input type="password" name="password" id="passwordLogin" value=""><br><br>
+        <button id="loginBtn" class='button'>Login</button> <button id="regsiterPage" class='button'>Register</button>
+        </div>
+
+
+        <div class="popBox" id="popBox-demo" style="display:none">
+            <div class="popBox-mask"></div>
+                <div class="popBox-content">
+                    <br>
+                    username: <input type="text" name="username" id="username" value="" '> <br> <br>
+                    password: <input type="password" name="password" id="password" value="" > <br> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: <input type="email" name="email" id="email" value="" > <br> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: <input type="text" name="name" id="name" value="" > <br> <br>
+                    <button id="regsiterBtn" class='button'>Register</button>
+                </div>
+        </div>
+
+        <div id='postDiv' style="display:none">
+            <input type="text" name="postText" id="postText" placeholder="What's on your mind?" class="postTextInput">
+            <input type="file" name="postFile" id='postFile' class="postFileInput">
+            <button id='postBtn' class='button'>Publish</button>
+        </div>
+
+
+        <div class="popBox" id="popBox-profile" style="display:none">
+            <div class="popBox-mask"></div>
+                <div class="popBox-content">
+                    <br>
+                    <label id='profileUsername'>Username: </label>
+                    <label id='profilePosts'>  Posts: </label>
+                    <label id='profileFollwing'>  Follwing: </label>
+                    <label id='profileFollowedBy'>  Followed by: </label><br><br><br>
+                    <!-- username: <input type="text" name="username" id="usernameProfile" value=""><br><br> -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: <input type="text" name="name" id="nameProfile" value=""><br><br>
+                    password: <input type="password" name="password" id="passwordProfile" value=""><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: <input type="email" name="email" id="emailProfile" value=""><br><br>
+                    
+                    <button id="updateProfileBtn" class='button'>UPDATE</button>
+                    <button id="closeProfileBtn" class='btn-close'>✕</button>
+                </div>
+        </div>
+        <!-- app goes here --> 
+
+        <div id='followDiv' style="display: none;">
+            <input type="text" id="followInput" class='followinput' placeholder="Input username"><br><br>
+            <button id='followBtn' class='button' style="margin-left: 20px ">Follow</button>
+            <button id='unfollowBtn' class='button'>Unfollow</button>
+        </div>
+        <div id='large-feed'>
+            <!-- inject feed data -->
+        </div>
+    </main>
+    <footer>
+        <p>©2018 Yun LU. Content is adorable under all licenses.</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+   <!--  <script type="text/javascript">
+        function showLikes() {
+            console.log("you arehere");
+        }
+    </script> -->
+</body>
+</html>
